@@ -1,0 +1,117 @@
+.App {
+  text-align: center;
+  background:linear-gradient(to right, #b8ffb8 50%, #ffffff 100%);
+  width:100%;
+  justify-content: center;
+ 
+  height: 100%;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+.navbar {
+  background:linear-gradient(to right, #b8ffb8 50%, #ffffff 100%);
+  display: flex;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  flex-direction: row;
+}
+
+.button1 {
+  border-radius: .25rem;
+  text-transform: uppercase;
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  color: #fff;
+  -webkit-clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  clip-path: polygon(0 0,0 0,100% 0,100% 0,100% calc(100% - 15px),calc(100% - 15px) 100%,15px 100%,0 100%);
+  height: 40px;
+  font-size: 0.7rem;
+  line-height: 14px;
+  letter-spacing: 1.2px;
+  transition: .2s .1s;
+  background-image: linear-gradient(90deg,#1c1c1c,#6220fb);
+  border: 0 solid;
+  overflow: hidden;
+}
+
+.button1:hover {
+  cursor: pointer;
+  transition: all .3s ease-in;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.navbarbutton{
+  background-color: transparent;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+  border: none; 
+  font-size: large;
+  
+  text-align: center;
+  color: black;
+}
+
+.links{
+display: flex;
+align-items: self-end;
+padding-left: 55%;
+
+
+}
+
+.homeimg{
+  align-items: center;
+}
+
+.spinning-photo {
+  animation: spin 10s linear infinite; /* Apply the 'spin' animation */
+  backface-visibility: hidden;
+  transform-origin: center;
+  align-self: center;
+  transform-style: preserve-3d;
+  pointer-events: none;
+  justify-self: center;
+  size-adjust: 100px,100px;
+  display: block;
+  
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); /* Initial rotation angle */
+    
+  }
+  100% {
+    transform: rotate(360deg); /* Final rotation angle */
+  }
+}
