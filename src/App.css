@@ -1,3 +1,14 @@
+:root{
+  --text-primary:#000000;
+  --text-secondary:#0d4fde;
+  --bg-primary:#ffffff;
+  --bg-secondary:#c7c7cf;
+  
+
+}
+body{
+  background-color: var(--bg-primary);
+}
 .App {
   text-align: center;
   background:linear-gradient(to right, #b8ffb8 50%, #ffffff 100%);
@@ -34,13 +45,614 @@
 }
 
 
-.navbar {
-  background:linear-gradient(to right, #b8ffb8 50%, #ffffff 100%);
+
+body::-webkit-scrollbar{
+  width: 0.25rem;
+ 
+}
+body::-webkit-scrollbar-track{
+  background:var(--bg-primary);
+  
+}
+body::-webkit-scrollbar-thumb{
+  background: var(--bg-secondary);
+  
+  
+}
+.about-container{
+  height: 100vh;
+}
+
+.hero-container{
   display: flex;
-  text-align: center;
-  align-items: center;
-  width: 100%;
   flex-direction: row;
+  flex-wrap: wrap;
+  
+  background-image: url("../public/porschebg2.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  
+}
+.hero-image{
+display: flex;
+flex-direction: column;
+margin-left: auto;
+width: 49vw;
+
+}
+.hero-img{
+  
+}
+
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  margin-left: 5vw;
+  width: 45vw;
+  height: 90vh;
+  
+  
+
+  }
+.hero-typewriter{
+  color: #000000;
+  font-size: larger;
+}  
+
+.hero-h2{
+  font-size: 50px;
+  font-weight: 600;
+  font-family:'Courier New', Courier, monospace;
+}
+.hero-text{
+  font-size: large;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 550;
+  color:white;
+  padding-left:20%;
+  
+
+}
+.navbar-container{
+  display: flex;
+  flex-wrap: wrap;
+  
+  
+
+}
+.navbar {
+  
+  background-color:transparent;
+  
+  
+  display: flex;
+  align-items: center; 
+  
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+  
+  width: 100%;
+
+  
+ 
+  
+  
+}
+.nav-menu{
+  margin-right: auto;
+  color: white;
+}
+.nav-login{
+  color: white;
+}
+.menu-icon{
+  width: 15px;
+  height: 15px;
+  
+  
+}
+.nav-helper{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  height: inherit;
+
+}
+.nav-headline{
+  font-size: 50px ;
+  font-family:'Courier New', Courier, monospace;
+  color: #ffffff;
+  margin-right: auto;
+  font-weight: bold;
+}
+.nav-links{
+ 
+  color: rgb(231, 231, 231);
+  padding-right: 25px;
+  text-decoration: none;
+  
+}
+
+.nav-list{
+  font-family:'Courier New', Courier, monospace;
+  
+  align-items: center;
+  list-style: none;
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  
+  
+}
+.nav-link-item {
+ 
+  
+  color: rgb(222, 222, 222);
+  text-decoration: none;
+  font-size: large;
+  
+  padding-right: 2rem;
+  
+  
+}
+
+.nav-link-item:hover,
+.nav-link-item:focus,
+.nav-link-item:active {
+  color: rgb(240, 248, 10); /* Change the color as desired */
+  
+}
+
+
+.sidebar {
+  display: flex;
+   /* Change this to your desired width */
+  width: 1200px;
+  height: 100vh;
+  background-color: #ffffff; /* Change this to your desired sidebar background color */
+  position: absolute;
+  top: 0;
+  left: 0;
+  
+   /* Set the animation duration here (e.g., 4s) */
+  
+  
+}
+
+.sidebar1{
+  padding-top: 100px;
+ 
+  width: 600px;
+  height: 100vh;
+}
+.sidebar2{
+  
+  padding-top: 50px;
+  margin-left: auto;
+  background-color: #EEEFF2;
+  width: 600px;
+  height: 100vh;
+  
+}
+.sidebar-line{
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 400px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.sidebar-line2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-links {
+  font-size: x-large;
+  list-style: none;
+  padding: 0;
+  padding-left: 100px;
+ 
+  color: black;
+  cursor: pointer;
+}
+.sidebar-links2{
+  font-size: x-large;
+  list-style: none;
+  padding: 0;
+  color: black;
+  cursor: pointer;
+}
+.sidebar-line:hover{
+  background-color: #dcdcdc;
+  
+}
+.sidebar-line2:hover{
+  background-color: #dcdcdc;
+  
+}
+.sidebar-links li {
+  padding: 8px;
+}
+
+.sidebar-links li a {
+  text-decoration: none;
+  color: rgb(0, 0, 0); /* Change this to your desired link color */
+}
+.right-arrow{
+  width: 10px;
+  height: 10px;
+}
+
+/* Styling for the sidebar toggle icon and text */
+.sidebar-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+.close {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 32px;
+  height: 32px;
+  opacity: 1;
+  color: white;
+}
+.close:hover {
+  opacity: 1;
+}
+.close:before, .close:after {
+  position: absolute;
+  
+  content: ' ';
+  height: 33px;
+  width: 4px;
+  background-color: #ffffff;
+}
+.close:before {
+  transform: rotate(45deg);
+}
+.close:after {
+  transform: rotate(-45deg);
+}
+
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: -50px;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  ;
+}
+.close-image{
+  width: 20px;
+  height: 20px;
+  color:white;
+}
+.sidebar.isOpen {
+  animation-name: slideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+}
+
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+    
+  }
+  to {
+    transform: translateX(0);
+    
+  }
+}
+
+.sidebar.isClosed {
+  animation-name: slideOut;
+  animation-duration: 3s;
+  animation-timing-function: ease;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+
+.logo {
+  
+  color: rgb(180, 5, 5);
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: 900;
+  font-style:bold;
+  align-self: center;
+  align-content: center;
+  align-items: center;
+  
+  
+}
+.logo-image{
+  width: 220px;
+  height: 60px;
+  justify-self: center;
+}
+
+
+
+
+
+.information{
+  width: 100vw;
+  justify-content: center;
+  display: flex;
+  
+  flex-direction: row;
+}
+.information-item{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 450px;
+  height:115px;
+  border-style:solid ;
+  border-radius: 15px 0px 0px 15px;
+  border-width: 1px;
+  border-color: #ebebeb;
+  
+
+}
+.information-item:hover {
+  background-color: #f1f1f1; /* Change the background color on hover */
+  font-size: larger;
+}
+.information-item2{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 450px;
+  height:115px;
+  border-style:solid ;
+  
+  border-width: 1px;
+  border-color: #ebebeb;
+  
+
+}
+.information-item2:hover {
+  background-color: #f1f1f1; /* Change the background color on hover */
+  font-size: large
+}
+.information-item3{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 450px;
+  height:115px;
+  border-style:solid ;
+  border-radius: 0px 15px 15px 0px;
+  border-width: 1px;
+  border-color: #ebebeb;
+  
+
+}
+.information-item3:hover {
+  background-color: #f1f1f1; /* Change the background color on hover */
+  font-size: large
+}
+.info-image{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  padding-left: 15px;
+  padding-top: 5px;
+  
+  left: 0;
+}
+.hover-button {
+  position: absolute;
+  border: none;
+  border-radius: 20px;
+  right:0;
+  bottom: 0;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.information-item:hover .hover-button {
+  opacity: 1;
+}
+.information-item2:hover .hover-button {
+  opacity: 1;
+}
+.information-item3:hover .hover-button {
+  opacity: 1;
+}
+
+.typewriter {
+  delay:100;
+  
+    
+}
+#textRotation{
+  transform: rotateX(0deg);
+  transition: 1s;
+
+}
+.hide-end-cursor::after {
+  content: "";
+  display: none !important;
+}
+
+.card-car {
+  /* Add any existing styles for the card */
+
+  /* Make the card container relative to position the photo container */
+  position: relative;
+}
+
+.card-photo-container {
+  /* Make the photo container fill the card */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.car-photo {
+  /* Set the photo to cover the photo container */
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  position: relative;
+  border-radius: inherit;
+}
+
+
+.car-hero-text{
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  border-color: #000000;
+  width: 33vw;
+  
+  
+  
+  
+}
+.image-overlay {
+  
+  position: relative;
+  border-radius: inherit;
+  height: 800px;
+  width: 600px;
+  
+}
+.image-overlay .car-photo {
+  width: 100%; /* Ensure the image covers the container */
+
+}
+
+
+.text-overlay-h1{
+  
+  position: absolute; /* Position the text overlay absolutely inside the image-overlay */
+  top: 0; /* Align the text to the top */
+  left: 0; /* Align the text to the left */
+   /* Add a background color to the text overlay (adjust as needed) */
+  /* Add some padding to the text overlay (adjust as needed) */
+  color: white; /* Set the text color */
+  padding-left: 20px;
+ 
+  
+  
+}
+.text-overlay-p{
+  position: absolute;
+  top: 1;
+  left: 0;
+  text-align: center;
+  color: white;
+  padding-left: 20px;
+  
+}
+
+
+.car-hero-section{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 10%;
+  
+  background-size: cover;
+  background-position: center;
+  
+}
+.car-item {
+  margin: 10px; /* Add margin between the cards (adjust as needed) */
+  
+}
+.cars-container{
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: center;
+  flex-direction: row;
+}
+.car-row {
+  display: flex; /* Use flexbox to create a row of cards */
+  justify-content: center; /* Center the cards horizontally */
+}
+
+.card-car{
+  display: flex;
+  flex-direction: column;
+  
+  
+}
+.homepage{
+  display: flex;
+  background-color: #ffffff;
+  
+  flex-direction: row;
+  flex-wrap: wrap;
+  
+  
+  
+
+}
+.homepage-buy{
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  
+ 
+}
+.homepage-rent{
+  display: flex;
+  
+  justify-content: center;
+ 
+  font-size: large;
+}
+.h1-buy{
+  font-size: 40px;
+  font-weight: 600;
+  font-family:'Courier New', Courier, monospace;
+  align-self: center;
+}
+.p-buy{
+  font-size: large;
+  font-family:'Courier New', Courier, monospace;
+  font-weight: 550;
 }
 
 .button1 {

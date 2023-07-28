@@ -23,6 +23,7 @@ setLoading(false);
 })
 console.log("use effect run ");
 },[url]);
+console.log(data)
 
 return {data, isLoading,error} }
 
