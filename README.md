@@ -1,10 +1,3 @@
-# Project Cars
-
-#### Welcome to my Project cars where i am trying to imitate Porche website to its full design and almost all functionality.
-
-#### I am doing this to learn new design tricks and layouts and all the css tricks a i havent mastered so far.
-
-
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
