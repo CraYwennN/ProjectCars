@@ -10,7 +10,7 @@ import porsche718 from "../cars/porsche718final.png"
 const Cars = [
     {
         "Id": 1,
-        "Name": "Audi E-tron GT quattro",
+        "Name": "Porsche 911",
         "Model":"911",
         "Year of making": 2023,
         "Engine Type": "Electric",
@@ -36,7 +36,7 @@ const Cars = [
       },
       {
         "Id": 2,
-        "Name": "Lamborghini Aventador",
+        "Name": "Porsche 718",
         "Model":"718",
         "Year of making": 2022,
         "Engine Type": "Gasoline",
@@ -58,7 +58,7 @@ const Cars = [
       },
       {
         "Id": 3,
-        "Name": "BMW 3 Series",
+        "Name": "Prosche Taycan",
         "Model":"Taycan",
         "Year of making": 2020,
         "Engine Type": "Diesel",
@@ -79,7 +79,7 @@ const Cars = [
       },
       {
         "Id": 4,
-        "Name": "Honda Civic",
+        "Name": "Porsche Panamera",
         "Model":"Panamera",
         "Year of making": 2023,
         "Engine Type": "Petrol",
@@ -100,7 +100,7 @@ const Cars = [
       },
       {
         "Id": 5,
-        "Name": "Mercedes-Benz C-Class",
+        "Name": "Porsche Macan",
         "Model":"Macan",
         "Year of making": 2022,
         "Engine Type": "Gasoline",
@@ -121,7 +121,7 @@ const Cars = [
       },
       {
         "Id": 6,
-        "Name": "Chevrolet Corvette",
+        "Name": "Porsche Cayenne",
         "Model":"Cayenne",
         "Year of making": 2023,
         "Engine Type": "Gasoline",
@@ -140,86 +140,7 @@ const Cars = [
           "Interior Color Options": ["Black", "Red", "Gray"]
         }
       },
-      {
-        "Id": 7,
-        "Name": "Volkswagen Golf",
-        "Year of making": 2022,
-        "Engine Type": "Petrol",
-        "Top speed": 130,
-        "Origin": "Germany",
-        "img": "",
-        "Engine Details": {
-          "Displacement": "1.5L",
-          "Cylinders": 4,
-          "Transmission": "Manual",
-          "Horsepower": 147
-        },
-        "Interior": {
-          "Seating Capacity": 5,
-          "Infotainment System": "6.5-inch touchscreen",
-          "Interior Color Options": ["Black", "Gray", "Beige"]
-        }
-      },
-      {
-        "Id": 8,
-        "Name": "Audi A4",
-        "Year of making": 2023,
-        "Engine Type": "Gasoline",
-        "Top speed": 155,
-        "Origin": "Germany",
-        "img": "",
-        "Engine Details": {
-          "Displacement": "2.0L",
-          "Cylinders": 4,
-          "Transmission": "Automatic",
-          "Horsepower": 201
-        },
-        "Interior": {
-          "Seating Capacity": 5,
-          "Infotainment System": "10.1-inch touchscreen",
-          "Interior Color Options": ["Black", "Brown", "Gray"]
-        }
-      },
-      {
-        "Id": 9,
-        "Name": "Jeep Wrangler",
-        "Year of making": 2022,
-        "Engine Type": "Gasoline",
-        "Top speed": 180,
-        "Origin": "United States",
-        "img": "",
-        "Engine Details": {
-          "Displacement": "3.6L",
-          "Cylinders": 6,
-          "Transmission": "Automatic",
-          "Horsepower": 285
-        },
-        "Interior": {
-          "Seating Capacity": 4,
-          "Infotainment System": "7-inch touchscreen",
-          "Interior Color Options": ["Black", "Gray", "Tan"]
-        }
-      },
-      {
-        "Id": 10,
-        "Name": "Nissan GT-R",
-        "Year of making": 2023,
-        "Engine Type": "Gasoline",
-        "Top speed": 195,
-        "Origin": "Japan",
-        "img": "",
-        "Engine Details": {
-          "Displacement": "5.2L",
-          "Cylinders": 8,
-          "Transmission": "Automatic",
-          "Horsepower": 300
-          },
-          "Interior": {
-            "Seating Capacity": 4,
-            "Infotainment System": "7-inch touchscreen",
-            "Interior Color Options": ["Black", "Gray", "Tan"]
-          } 
-          }
+      
 ]
 
 export {Cars}

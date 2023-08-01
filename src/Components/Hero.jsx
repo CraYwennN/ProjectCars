@@ -44,22 +44,10 @@ const Hero = () => {
           className="hero-section"
         >
           <div className='hero-text'>
-            <h2 className='hero-h2'>Introducing Porsche.</h2>
+            <h2 className='hero-h2'>911 Turbo S.</h2>
             
-            <Typewriter
-              className = "hero-typewriter"
-              text="At Car.Project, we believe that driving is an art form—a thrilling experience that deserves to be enjoyed in its purest form."
-              delay={25}
-              
-            /><br/>
-
-            {showSecondTypewriter && (
-              <Typewriter
-                text="We are proud to present our exclusive collection of premium cars, curated for enthusiasts who seek unparalleled luxury, cutting-edge technology, and exhilarating performance."
-                delay={25}
-                
-              />
-            )}<br/>
+            
+            <br/>
           </div>
         </motion.div>
               

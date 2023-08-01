@@ -3,6 +3,7 @@
 import "../App.css";
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import {motion} from "framer-motion"
 
 const Navlinks = [
   
@@ -28,25 +29,47 @@ const Models = [
 ];
 
 const Services = [
-  { id: "Service1" },
-  { id: "Service2" },
-  { id: "Service3" },
+  { id: "Tequipment - Genuine Accessories" },
+  { id: "Exclusive Manufaktur - Individual Vechicles" },
+  { id: "Online Bill Payment" },
+  { id: "Delivery Programs" },
+  { id: "Porsche Protection Plan" },
+  { id: "Porsche Auto Insurance" },
+  { id: "Service & Maintenance" },
 ];
+const Information = [
+  {id:'Build Your Own'},
+  {id:'Compare Models'},
+  {id:'New & Used Inventory'},
+  {id:'Current Vehicle Offers'},
+  {id:'Certified Pre-Owned & Warranty'},
+  {id:'Find Connect Services'},
+  {id:'Porsche Financial Services'},
+]
 
 const Navbar = () => {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const [selectedLink, setSelectedLink] = useState("Models"); // State to keep track of the selected link ID
+  const [isSidebarTransitioning, setIsSidebarTransitioning] = useState(false);
+  
 
   // Function to toggle the sidebar state
   const toggleSidebar = () => {
-    setIsSidebarOpen(!isSidebarOpen);
-   
-   
+    if (isSidebarOpen) {
+      setIsSidebarTransitioning(true);
+      
+      setTimeout(() => {
+        setIsSidebarOpen(false);
+        setIsSidebarTransitioning(false);
+      }, 1000);
+    } else {
+      setIsSidebarOpen(true);
+    }
   };
   const closeSidebar = () => {
     setIsSidebarOpen(false);
     setTimeout(() => {
-      // Perform any other cleanup or actions here if needed
+     
     }, 300); // Adjust the delay time as needed (e.g., 300ms)
   };
 
@@ -66,7 +89,9 @@ const Navbar = () => {
     if (selectedLink === "Models") {
       return Models;
     } else if (selectedLink === "Services") {
-      return Services;
+      return Services;}
+      else if (selectedLink === "Information") {
+        return Information;
     } else {
       // Handle other cases or return an empty array if not needed
       return [];
@@ -81,8 +106,8 @@ const Navbar = () => {
       </div>
 
       {isSidebarOpen && (
-        <div className={`sidebar ${isSidebarOpen ? "isOpen" : "isClosed"}`} onClick={toggleSidebar}>
-          <button className="close-button" >
+       <div className={`sidebar ${isSidebarOpen ? "isOpen" : ""} ${isSidebarTransitioning ? "isTransitioning" : ""}`}>
+          <button className="close-button" onClick={toggleSidebar} >
             <div className="close"></div>
           </button>
           <div className="sidebar1">
@@ -97,11 +122,11 @@ const Navbar = () => {
             </ul>
           </div>
 
-          <div className="sidebar2">
-            <ul className="sidebar-links2">
+          <div  className="sidebar2">
+            <ul className="sidebar-links2  ">
               {getLinksForSidebar2().map((link) => (
-                <li className="sidebar-link" key={link.id}>
-                  <div className="sidebar-line2">{link.img ? <img src={link.img} alt="Link Image" /> : link.id}</div>
+                <li className="sidebar-link sidebar2-animation" key={link.id}>
+                  <div className="sidebar-line2">{link.img ? <img className ={"car-image"}src={link.img} alt="Link Image" /> :<p className="car-text">{link.id}</p>}</div>
                 </li>
               ))}
             </ul>
@@ -111,8 +136,11 @@ const Navbar = () => {
         </div>
       )}
 
-      <p className="nav-headline">Porsche</p>
-      <p className="nav-login" >Login</p>
+      <Link to ={"/"} className="nav-headline"><p className="nav-headline">Porsche</p></Link>
+      <div>
+        <Link to = {"/search"}><img className="nav-search" src={"search-icon.png"}/></Link>
+      <Link to ={"/login"} className="nav-login" ><img src={"login-icon.png"}/></Link>
+      </div>
     </nav>
   );
 };

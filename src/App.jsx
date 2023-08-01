@@ -7,6 +7,9 @@ import Contact from './Components/Contact';
 import Shop from './Components/shop';
 import Hero from './Components/Hero';
 import Buy from './Components/Buy';
+import Login from './Components/Login';
+import Search from './Components/Search';
+import { Cars } from './cars/cars';
 
 const App = () => {
   return (
@@ -22,6 +25,8 @@ const App = () => {
         <Route path="/buy" element={<Buy />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/shop" element={<Shop />} />
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/search" element={<Search carsData={Cars} />} />
       </Routes>
     </BrowserRouter>
   );
